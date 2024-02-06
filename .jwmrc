@@ -12,6 +12,8 @@
             <Program icon="image" label="PCManFM">/usr/local/bin/pcmanfm</Program>
             <Program icon="email" label="Mail">claws-mail</Program>
             <Program icon="system-file-manager" label="ROX">pcmanfm ~</Program>
+            <Program icon="system-file-manager" label="Rofi	">/usr/loca/bin/rofi -show drun</Program>
+            <Program icon="irc" label="irc">exec: xterm irssi -n maqish -c irc.libera.chat</Program>
         </Menu>
         <Menu icon="folder" label="Utilities">
             <Program icon="font" label="Fonts">xfontsel</Program>
@@ -48,16 +50,16 @@
     <!-- Tray at the bottom. -->
     <Tray x="0" y="-1" autohide="off" delay="1000">
 
-        <TrayButton label="JWM">root:1</TrayButton>
+        <TrayButton label="GO">root:1</TrayButton>
         <Spacer width="2"/>
         <TrayButton label="_">showdesktop</TrayButton>
         <Spacer width="2"/>
 
         <Pager labeled="true"/>
 
-        <TaskList maxwidth="256"/>
+        <TaskList maxwidth="125"/>
 
-        <Swallow width="32" height="32" name="xclock">xclock</Swallow>
+        <!--<Swallow width="32" height="32" name="xclock">xclock</Swallow>-->		
 
         <Dock/>
         <Clock format="%l:%M %p"><Button mask="123">exec:xclock</Button></Clock>
@@ -66,7 +68,7 @@
 
     <!-- Visual Styles -->
     <WindowStyle decorations="motif">
-        <Font>Sans-12:bold</Font>
+        <Font>Sans-10:bold</Font>
         <Width>4</Width>
         <Corner>0</Corner>
         <Foreground>#FFFFFF</Foreground>
@@ -79,13 +81,13 @@
         </Active>
     </WindowStyle>
     <TrayStyle decorations="motif">
-        <Font>Sans-12</Font>
+        <Font>Sans-10</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
         <Opacity>0.75</Opacity>
     </TrayStyle>
     <TaskListStyle list="all" group="true">
-      <Font>Sans-12</Font>
+      <Font>Sans-10</Font>
       <Active>
         <Foreground>#FFFFFF</Foreground>
         <Background>#555555</Background>
@@ -103,7 +105,7 @@
         </Active>
     </PagerStyle>
     <MenuStyle decorations="motif">
-        <Font>Sans-12</Font>
+        <Font>Sans-10</Font>
         <Foreground>#FFFFFF</Foreground>
         <Background>#333333</Background>
         <Active>
@@ -113,7 +115,7 @@
         <Opacity>0.85</Opacity>
     </MenuStyle>
     <PopupStyle>
-        <Font>Sans-12</Font>
+        <Font>Sans-10</Font>
         <Foreground>#000000</Foreground>
         <Background>#999999</Background>
     </PopupStyle>
@@ -191,6 +193,9 @@
     <Key mask="A" key="Left">ldesktop</Key>
     <Key mask="A" key="Up">udesktop</Key>
     <Key mask="A" key="Down">ddesktop</Key>
+
+
+    <Key mask="A" key="c">exec: xterm /home/marc/bin/run-irssi.sh</Key>
 
     <!-- Mouse bindings -->
     <Mouse context="root" button="4">ldesktop</Mouse>
