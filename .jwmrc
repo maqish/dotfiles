@@ -12,7 +12,9 @@
             <Program icon="image" label="PCManFM">/usr/local/bin/pcmanfm</Program>
             <Program icon="email" label="Mail">claws-mail</Program>
             <Program icon="system-file-manager" label="ROX">pcmanfm ~</Program>
-            <Program icon="system-file-manager" label="Rofi	">/usr/loca/bin/rofi -show drun</Program>
+            <Program icon="system-file-manager" label="geany">/usr/local/bin/geany ~</Program>
+            <Program icon="system-file-manager" label="Rofi	">/usr/local/bin/rofi -show drun</Program>
+            <Program icon="system-file-manager" label="backgrounds">/usr/local/bin/nitrogen --save</Program>
             <Program icon="irc" label="irc">exec: xterm irssi -n maqish -c irc.libera.chat</Program>
         </Menu>
         <Menu icon="folder" label="Utilities">
