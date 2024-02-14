@@ -8,13 +8,14 @@
         <Menu icon="folder" label="Applications">
             <Program icon="leafpad.svg" label="leafpad">/usr/local/bin/leafpad</Program>
             <Program icon="calc" label="mc">/usr/local/bin/mc</Program>
-            <Program icon="web-browser" label="Dillo">/usr/local/bin/dillo</Program>
+            <Program icon="web-browser" label="Browser">/usr/local/bin/links -g</Program>
             <Program icon="image" label="PCManFM">/usr/local/bin/pcmanfm</Program>
             <Program icon="email" label="Mail">claws-mail</Program>
             <Program icon="system-file-manager" label="ROX">pcmanfm ~</Program>
             <Program icon="system-file-manager" label="geany">/usr/local/bin/geany ~</Program>
             <Program icon="system-file-manager" label="Rofi	">/usr/local/bin/rofi -show drun</Program>
             <Program icon="system-file-manager" label="backgrounds">/usr/local/bin/nitrogen --save</Program>
+            <Program icon="system-file-manager" label="Sylpheed">/usr/local/bin/sylpheed</Program>
             <Program icon="irc" label="irc">exec: xterm irssi -n maqish -c irc.libera.chat</Program>
         </Menu>
         <Menu icon="folder" label="Utilities">
@@ -69,7 +70,7 @@
     </Tray>
 
     <!-- Visual Styles -->
-    <WindowStyle decorations="motif">
+    <WindowStyle decorations="flat">
         <Font>Sans-10:bold</Font>
         <Width>4</Width>
         <Corner>0</Corner>
@@ -82,7 +83,7 @@
             <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
-    <TrayStyle decorations="motif">
+    <TrayStyle decorations="flat">
         <Font>Sans-10</Font>
         <Background>#333333</Background>
         <Foreground>#FFFFFF</Foreground>
@@ -231,5 +232,5 @@
     <Mouse context="minimize" button="-1">minimize</Mouse>
     <Mouse context="minimize" button="2">move</Mouse>
     <Mouse context="minimize" button="-3">shade</Mouse>
-
+    <MoveMode coordinates="off">outline</MoveMode>
 </JWM>
